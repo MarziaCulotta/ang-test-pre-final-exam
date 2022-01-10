@@ -1,0 +1,18 @@
+<div class="main-container d-flex flex-column align-items-center mt-5">
+  <div class="card text-center" style="width: 30rem;">
+    <div class="card-header">RANDOM MATH FACTS</div>
+    <div class="card-body">
+      <p class="card-text mt-2">{{mathFact$}}</p>
+      <div class="button-container d-flex justify-content-between">
+        <a href="#" class="btn btn-warning mt-2" (click)="even()">Even</a>
+        <a href="#" class="btn btn-success mt-2" (click)="odd()">Odd</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="child-container d-flex mt-5">
+    <angprj-even class="me-5" [evenChoice]="evenChoice"></angprj-even>
+    <angprj-odd [oddChoice]="oddChoice"></angprj-odd>
+  </div>
+</div>
+
